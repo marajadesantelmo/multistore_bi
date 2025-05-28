@@ -73,7 +73,6 @@ def show_page_arribos():
 # Run the show_page function
 if __name__ == "__main__":
     while True:
-        show_page_impo()
-        time.sleep(60)  
-        st.experimental_rerun() 
+        show_page_arribos()
+
 
