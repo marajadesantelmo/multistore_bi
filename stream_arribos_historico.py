@@ -25,7 +25,7 @@ def filter_data(data, cliente, start_date, end_date, date_column):
     filtered_data[date_column] = filtered_data[date_column].dt.strftime('%d/%m/%Y')
     return filtered_data
 
-def show_page_impo_historico():
+def show_page_arribos_historico():
     arribos_impo_historico, historico_retiros_impo, historico_verificaciones_impo, historico_otros_impo = fetch_data_impo_historico()
     arribos_impo_historico['Fecha'] = pd.to_datetime(arribos_impo_historico['Fecha'])
     historico_retiros_impo['Dia'] = pd.to_datetime(historico_retiros_impo['Dia'])

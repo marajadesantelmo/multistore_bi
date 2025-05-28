@@ -70,9 +70,4 @@ def show_page_arribos():
                                                                     display_text="\U0001F517",)},
                 hide_index=True, use_container_width=True)
 
-# Run the show_page function
-if __name__ == "__main__":
-    while True:
-        show_page_arribos()
-
 
