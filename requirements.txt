@@ -1,2 +1,2 @@
 streamlit_option_menu
-stramlit_cookies_manager
+streamlit_cookies_manager
