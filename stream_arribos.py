@@ -2,21 +2,16 @@ import streamlit as st
 import pandas as pd
 import time
 from datetime import datetime
-from utils import highlight
+from utils import highlight  
 
-@st.cache_data(ttl=60) 
-def fetch_data_impo():
+def show_page_arribos():
+    # Load data
     arribos = pd.read_csv('data/arribos.csv')
     pendiente_desconsolidar = pd.read_csv('data/pendiente_desconsolidar.csv')
     verificaciones_impo = pd.read_csv('data/verificaciones_impo.csv')
     retiros_impo = pd.read_csv('data/retiros_impo.csv')
     existente_plz = pd.read_csv('data/existente_plz.csv')
     existente_alm = pd.read_csv('data/existente_alm.csv')
-    return arribos, pendiente_desconsolidar, verificaciones_impo, retiros_impo,  existente_plz, existente_alm
-
-def show_page_impo():
-    # Load data
-    arribos, pendiente_desconsolidar, verificaciones_impo, retiros_impo, existente_plz, existente_alm = fetch_data_impo()
 
     col_logo, col_title = st.columns([2, 5])
     with col_logo:

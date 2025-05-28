@@ -53,27 +53,15 @@ if not st.session_state['logged_in']:
 else:
     page_selection = option_menu(
             None,  # No menu title
-            ["IMPO", "EXPO", "Balanza", "Plazoleta", "Tráfico", "IMPO - histórico", "EXPO - histórico", "Tráfico - histórico", "Logout"],  
-            icons=["arrow-down-circle", "arrow-up-circle", "book", "book", "arrow-right-circle", "book", "book", "book", "box-arrow-right"],   
+            ["Arribos", "Arribos - histórico", "Logout"],  
+            icons=["arrow-down-circle", "book", "box-arrow-right"],   
             menu_icon="cast",  
             default_index=0, 
             orientation="horizontal")
     if page_selection == "IMPO":
-        stream_impo.show_page_impo()  
-    elif page_selection == "EXPO":
-        stream_expo.show_page_expo()
-    elif page_selection == "Balanza":
-         stream_balanza.show_page_balanza()
-    elif page_selection == "Plazoleta":
-         stream_plazoleta.show_page_plazoleta()
-    elif page_selection == "Tráfico":
-        stream_trafico.show_page_trafico()
-    elif page_selection == "IMPO - histórico":
-        stream_impo_historico.show_page_impo_historico()
-    elif page_selection == "EXPO - histórico":
-        stream_expo_historico.show_page_expo_historico()
-    elif page_selection == "Tráfico - histórico":
-        stream_trafico_historico.show_page_trafico_historico()
+        stream_arribos.show_page_arribos()  
+    elif page_selection == "Arribos - histórico":
+        stream_arribos_historico.show_page_arribos_historico()
     elif page_selection == "Logout":
         cookies.pop("logged_in", None)
         cookies.pop("username", None)
