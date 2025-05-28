@@ -1,14 +1,12 @@
 import streamlit as st
+st.set_page_config(page_title="Multistore - Dashboards", 
+                   page_icon="📊", 
+                   layout="wide")
 import stream_arribos
 import stream_arribos_historico
 from streamlit_option_menu import option_menu
 from streamlit_cookies_manager import EncryptedCookieManager
 import os
-
-# Page configurations
-st.set_page_config(page_title="Multistore - Dashboards", 
-                   page_icon="📊", 
-                   layout="wide")
 
 # Estilo
 with open("styles.css") as f:
