@@ -32,7 +32,7 @@ def show_page_arribos_historico():
         st.image('logo.png')
     with col_title:
         current_day = datetime.now().strftime("%d/%m/%Y")
-        st.title("Histórico - Operaciones de IMPO")
+        st.title("Histórico - Arribos y Retiros")
 
     col1, col2 = st.columns(2)
 
