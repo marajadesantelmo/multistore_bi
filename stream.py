@@ -56,7 +56,7 @@ else:
             menu_icon="cast",  
             default_index=0, 
             orientation="horizontal")
-    if page_selection == "IMPO":
+    if page_selection == "Arribos":
         stream_arribos.show_page_arribos()  
     elif page_selection == "Arribos - histórico":
         stream_arribos_historico.show_page_arribos_historico()
