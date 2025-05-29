@@ -6,8 +6,7 @@ def fetch_data_impo_historico():
     arribos_impo_historico = pd.read_csv('data/arribos_impo_historico.csv')
     historico_retiros_impo = pd.read_csv('data/historico_retiros_impo.csv')
     historico_verificaciones_impo = pd.read_csv('data/historico_verificaciones_impo.csv')
-    historico_otros_impo = pd.read_csv('data/historico_otros_impo.csv')
-    return arribos_impo_historico, historico_retiros_impo, historico_verificaciones_impo, historico_otros_impo
+    return arribos_impo_historico, historico_retiros_impo, historico_verificaciones_impo
 
 def filter_data(data, cliente, start_date, end_date, date_column):
     if cliente == "Todos los clientes":
@@ -23,11 +22,10 @@ def filter_data(data, cliente, start_date, end_date, date_column):
     return filtered_data
 
 def show_page_arribos_historico():
-    arribos_impo_historico, historico_retiros_impo, historico_verificaciones_impo, historico_otros_impo = fetch_data_impo_historico()
+    arribos_impo_historico, historico_retiros_impo, historico_verificaciones_impo= fetch_data_impo_historico()
     arribos_impo_historico['Fecha'] = pd.to_datetime(arribos_impo_historico['Fecha'])
     historico_retiros_impo['Dia'] = pd.to_datetime(historico_retiros_impo['Dia'])
     historico_verificaciones_impo['Dia'] = pd.to_datetime(historico_verificaciones_impo['Dia'])
-    historico_otros_impo['Dia'] = pd.to_datetime(historico_otros_impo['Dia'])
     
     col_logo, col_title = st.columns([2, 5])
     with col_logo:
@@ -92,19 +90,6 @@ def show_page_arribos_historico():
                                                 display_text="\U0001F517",)},
                      hide_index=True, use_container_width=True)
 
-        st.subheader("Otros")
-        col2_4, col2_5, col2_6 = st.columns(3)
-        with col2_4:
-            start_date_otros = st.date_input("Fecha Inicio", value=historico_otros_impo['Dia'].min(), key='start_date_otros')
-            st.write(f"Fecha Inicio: {start_date_otros.strftime('%d/%m/%Y')}")
-        with col2_5:
-            end_date_otros = st.date_input("Fecha Fin", value=historico_otros_impo['Dia'].max(), key='end_date_otros')
-            st.write(f"Fecha Fin: {end_date_otros.strftime('%d/%m/%Y')}")
-        with col2_6:
-            client_options = ["Todos los clientes"] + sorted(list(historico_otros_impo['Cliente'].unique()))
-            cliente_otros = st.selectbox("Cliente", options=client_options, key='cliente_otros')
-            filtered_data_otros = filter_data(historico_otros_impo, cliente_otros, start_date_otros, end_date_otros, "Dia")        
-        st.dataframe(filtered_data_otros, hide_index=True, use_container_width=True)
 
 
 
