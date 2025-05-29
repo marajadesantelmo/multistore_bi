@@ -71,3 +71,10 @@ def show_page_arribos():
                 column_config={'e-tally': st.column_config.LinkColumn('e-tally', 
                                                                     display_text="\U0001F517",)},
                 hide_index=True, use_container_width=True)
+
+
+def main():
+    st.set_page_config(page_title="Multistore - Arribos", 
+                       page_icon="📦", 
+                       layout="wide")
+    show_page_arribos()
