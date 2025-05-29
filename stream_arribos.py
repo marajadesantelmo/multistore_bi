@@ -4,6 +4,8 @@ import time
 from datetime import datetime
 from utils import highlight  
 
+
+
 def show_page_arribos():
     # Load data
     arribos = pd.read_csv('data/arribos.csv')
@@ -32,12 +34,12 @@ def show_page_arribos():
         st.dataframe(arribos.style.apply(highlight, axis=1).set_properties(subset=['Cliente'], **{'width': '20px'}), hide_index=True, use_container_width=True)
 
     with col2:
-        col2_sub, col2_metric1, col2_mentric2 = st.columns([6, 1, 1])
+        col2_sub, col2_metric1, col2_metric2 = st.columns([6, 1, 1])
         with col2_sub:
             st.subheader("Pendiente Desconsolidar y Vacios")
         with col2_metric1:
             st.metric(label="Ptes. Desco.", value=pendiente_desconsolidar[pendiente_desconsolidar['Estado'] == 'Pte. Desc.'].shape[0])
-        with col2_mentric2:
+        with col2_metric2:
             st.metric(label="Vacios", value=pendiente_desconsolidar[pendiente_desconsolidar['Estado'] == 'Vacio'].shape[0])
         st.dataframe(pendiente_desconsolidar.style.apply(highlight, axis=1).format(precision=0), hide_index=True, use_container_width=True)
 
@@ -69,5 +71,3 @@ def show_page_arribos():
                 column_config={'e-tally': st.column_config.LinkColumn('e-tally', 
                                                                     display_text="\U0001F517",)},
                 hide_index=True, use_container_width=True)
-
-
