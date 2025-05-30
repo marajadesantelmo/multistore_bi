@@ -1,25 +1,25 @@
-Operacion,Cliente,Desc,Conocimiento,Contenedor,Ingreso,Tipo,T-TD,Ubicacion,e-tally
-35670-0-1,Jupam Sa,Telas,-,EMCU-890304-7,27-05-2025,HC,T,PLZA,
-35656-0-1,Lift Van Int. Co S.A,Mudanza / Emb Eeuu,ONEYANRF10901800,DRYU-428677-0,27-05-2025,DC,T,PLZA,
-35655-0-1,Sergio Gabriel Vazqu...,Forklift,-,TEMU-432037-4,27-05-2025,DC,TD,PLZA,
-35639-0-1,Mundial Sa,Cartulinas Cmpc,CH3522025,,26-05-2025,  ,-,PLZA,
-35616-0-1,Net Quality S.R.L.,Patchcore Cable,-,ONEU-602463-9,26-05-2025,HC,T,PLZA,
-35615-0-2,Pantografos Cam Cnc ...,Laser Cutting,-,HMMU-703868-8,26-05-2025,HC,TD,PLZA,http://dassa.mqbic.com/PublicTally.php?id=1890
-35615-0-1,Pantografos Cam Cnc ...,Laser Cutting,-,KOCU-453461-2,26-05-2025,HC,TD,PLZA,http://dassa.mqbic.com/PublicTally.php?id=1889
-35615-0-3,Pantografos Cam Cnc ...,Laser Cutting,-,KOCU-474821-3,26-05-2025,HC,TD,PLZA,http://dassa.mqbic.com/PublicTally.php?id=1891
-35537-0-1,Ledorot S.A.,Telas,-,TEMU-699863-2,21-05-2025,HC,T,PLZA,
-35446-0-1,Jupam Sa,Telas,-,GAOU-624476-7,19-05-2025,HC,-,PLZA,
-35439-0-1,Bymar Transforwardin...,Mudanza,-,MRKU-045393-1,16-05-2025,DR,-,PLZA,http://dassa.mqbic.com/PublicTally.php?id=1870
-35439-0-1,Bymar Transforwardin...,Mudanza,-,MRKU-045393-1,16-05-2025,DR,-,PLZA,http://dassa.mqbic.com/PublicTally.php?id=1870
-34812-0-1,Dpmg S.A.,Isotanques,-,ZHLU-201408-0,17-04-2025,is,-,PLZA,
-34811-0-1,Dpmg S.A.,Isotanques,-,ZHLU-201401-2,17-04-2025,is,-,PLZA,
-34810-0-1,Dpmg S.A.,Isotanues,-,ZHLU-201505-0,17-04-2025,is,-,PLZA,
-34808-0-1,Dpmg S.A.,Isotanues,-,ZHLU-201406-0,17-04-2025,is,-,PLZA,
-34775-0-1,Grupo Rsm Srl,Electric Pallet,-,CSNU-233726-4,15-04-2025,DR,-,PLZA,http://dassa.mqbic.com/PublicTally.php?id=1704
-32031-1-1,Espert S.A.,Maquina Industria Ta...,DEBER206843-1,TCLU-872848-0,20-11-2024,HC,-,P-TIN,http://dassa.mqbic.com/PublicTally.php?id=950
-22998-1-1,Mgp Logistics S.R.L,Auto -,HLCUSYD221116679,SEGU-182617-2,31-01-2023,DR,-,P-TIN,
-21600-2-1,Geo Logistics Argent...,Mercedes Benz 560Sl,220813525,SUDU-549256-1,15-09-2022,DR,-,P-TIN,
-7696-0-1,La Selena S.A.,Qdc Textiles,-,FSCU-814752-7,20-02-2019,HC,-,PLZA,
-7668-0-1,La Selena S.A.,Qdc Textiles Fabric,-,ZCSU-849301-1,19-02-2019,HC,-,PLZA,
-5015-2-1,Zimmermann Ernesto,Ernesto Zimmermann/ ...,COSU4006908970,DFSU-737166-6,20-02-2018,HC,-,PLZA,
-3222-1-1,Ram Sur S.A.,Decorative And Homew...,ANRM57670A23E007,CADU-703172-7,17-08-2017,HC,-,TEMPO,
+Operacion,Cliente,Desc,Conocimiento,Contenedor,Ingreso,Tipo,T-TD,Ubicacion
+35670-0-1,Latos Sa,Telas,-,VPSA-890304-7,27-05-2025,HC,T,PLZA
+35656-0-1,Transport Van Int. Co S.A,Mudanza / Emb Eeuu,ONEYANRF10901800,IUTX-428677-0,27-05-2025,DC,T,PLZA
+35655-0-1,Sergio Gabriel Vazqu...,ForkCargo,-,HDUA-432037-4,27-05-2025,DC,TD,PLZA
+35639-0-1,Mundial Sa,Cartulinas Cmpc,CH3522025,,26-05-2025,  ,-,PLZA
+35616-0-1,Net Quality S.R.L.,Patchcore Cable,-,RYIX-602463-9,26-05-2025,HC,T,PLZA
+35615-0-2,Pantografos Cam Cnc ...,Laser Cutting,-,ZFRM-703868-8,26-05-2025,HC,TD,PLZA
+35615-0-1,Pantografos Cam Cnc ...,Laser Cutting,-,ARCP-453461-2,26-05-2025,HC,TD,PLZA
+35615-0-3,Pantografos Cam Cnc ...,Laser Cutting,-,TLPC-474821-3,26-05-2025,HC,TD,PLZA
+35537-0-1,Ledorot S.A.,Telas,-,LDPC-699863-2,21-05-2025,HC,T,PLZA
+35446-0-1,Latos Sa,Telas,-,ZEEZ-624476-7,19-05-2025,HC,-,PLZA
+35439-0-1,Bymar Transforwardin...,Mudanza,-,GQCT-045393-1,16-05-2025,DR,-,PLZA
+35439-0-1,Bymar Transforwardin...,Mudanza,-,YZMJ-045393-1,16-05-2025,DR,-,PLZA
+34812-0-1,Dpmg S.A.,Isotanques,-,TJUA-201408-0,17-04-2025,is,-,PLZA
+34811-0-1,Dpmg S.A.,Isotanques,-,PETG-201401-2,17-04-2025,is,-,PLZA
+34810-0-1,Dpmg S.A.,Isotanues,-,PWQL-201505-0,17-04-2025,is,-,PLZA
+34808-0-1,Dpmg S.A.,Isotanues,-,ZPJZ-201406-0,17-04-2025,is,-,PLZA
+34775-0-1,Grupo Rsm Srl,Electric Pallet,-,QHJD-233726-4,15-04-2025,DR,-,PLZA
+32031-1-1,Espert S.A.,Maquina Industria Ta...,DEBER206843-1,SPMJ-872848-0,20-11-2024,HC,-,P-TIN
+22998-1-1,Mgp Logistics S.R.L,Auto -,HLCUSYD221116679,VICR-182617-2,31-01-2023,DR,-,P-TIN
+21600-2-1,Geo Logistics Argent...,Mercedes Benz 560Sl,220813525,HJBG-549256-1,15-09-2022,DR,-,P-TIN
+7696-0-1,La Selena S.A.,Qdc Metales,-,ELVP-814752-7,20-02-2019,HC,-,PLZA
+7668-0-1,La Selena S.A.,Qdc Metales Fabric,-,ADYB-849301-1,19-02-2019,HC,-,PLZA
+5015-2-1,Zimmermann Ernesto,Ernesto Zimmermann/ ...,COSU4006908970,MSPL-737166-6,20-02-2018,HC,-,PLZA
+3222-1-1,Ram Sur S.A.,Decorative And Homew...,ANRM57670A23E007,ECGC-703172-7,17-08-2017,HC,-,TEMPO
