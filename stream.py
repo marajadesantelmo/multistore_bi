@@ -4,6 +4,7 @@ st.set_page_config(page_title="Multistore - Dashboards",
                    layout="wide")
 import stream_arribos
 import stream_arribos_historico
+import stream_pendientes_facturar
 from streamlit_option_menu import option_menu
 from streamlit_cookies_manager import EncryptedCookieManager
 import os
@@ -51,8 +52,8 @@ if not st.session_state['logged_in']:
 else:
     page_selection = option_menu(
             None,  # No menu title
-            ["Arribos", "Arribos - histórico", "Logout"],  
-            icons=["arrow-down-circle", "book", "box-arrow-right"],   
+            ["Arribos", "Arribos - histórico", "Items pendientes de Facturar", "Logout"],  
+            icons=["arrow-down-circle", "book", "file-earmark-excel", "box-arrow-right"],   
             menu_icon="cast",  
             default_index=0, 
             orientation="horizontal")
@@ -60,6 +61,8 @@ else:
         stream_arribos.show_page_arribos()  
     elif page_selection == "Arribos - histórico":
         stream_arribos_historico.show_page_arribos_historico()
+    elif page_selection == "Items pendientes de Facturar":
+        stream_pendientes_facturar.show_page_pendientes_facturar()
     elif page_selection == "Logout":
         cookies.pop("logged_in", None)
         cookies.pop("username", None)
