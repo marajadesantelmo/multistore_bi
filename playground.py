@@ -11,6 +11,8 @@ pendientes_facturar['Fecha'] = pd.to_datetime(pendientes_facturar['Fecha']).dt.s
 pendientes_facturar['Fecha'] = pendientes_facturar['Fecha'].astype(str)
 pendientes_facturar.to_csv('data/pendientes_facturar.csv', index=False)
 
+
+
 data_folder = 'data'
 for filename in os.listdir(data_folder):
     if filename.endswith('.csv'):
