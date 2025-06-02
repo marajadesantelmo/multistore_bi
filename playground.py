@@ -4,6 +4,13 @@ arribos_impo_historico = pd.read_csv('data/arribos_impo_historico.csv')
 arribos_impo_historico.drop(columns=['e-tally'], inplace=True, errors='ignore')
 arribos_impo_historico.to_csv('data/arribos_impo_historico.csv', index=False)
 
+
+import pandas as pd
+pendientes_facturar = pd.read_csv('data/pendientes_facturar.csv')
+pendientes_facturar['Fecha'] = pd.to_datetime(pendientes_facturar['Fecha']).dt.strftime('%d/%m/%Y')
+pendientes_facturar['Fecha'] = pendientes_facturar['Fecha'].astype(str)
+pendientes_facturar.to_csv('data/pendientes_facturar.csv', index=False)
+
 data_folder = 'data'
 for filename in os.listdir(data_folder):
     if filename.endswith('.csv'):

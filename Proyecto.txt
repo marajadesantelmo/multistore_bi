@@ -1,0 +1,75 @@
+# Proyecto de Tablero de Control para Depósito Fiscal - Multistore S.A.
+
+## Introducción
+
+El presente proyecto propone la implementación de un tablero de control interactivo para el depósito fiscal de Multistore S.A., utilizando como fuente de datos la base SQL del software de gestión Depofis de SysPro. El objetivo es brindar una herramienta visual, dinámica y en tiempo real para la gestión y seguimiento de operaciones logísticas, optimizando la toma de decisiones y el control operativo.
+
+---
+
+## Funcionalidades Actuales de la Aplicación
+
+- **Visualización de Arribos:**  
+  El tablero muestra los arribos de contenedores y cargas, permitiendo filtrar por fecha, cliente y estado. Cada arribo cambia de color según su estado operativo, facilitando la identificación rápida de prioridades y pendientes. Los estados y colores se actualizan automáticamente en función de los datos provenientes de la base SQL de Depofis.
+
+- **Seguimiento de Estados:**  
+  Los arribos pueden encontrarse en diferentes estados (por ejemplo: "Pendiente ingreso", "Arribado", "En curso", "Realizado", "Vacio", etc.), cada uno representado con un color distintivo en el tablero para una rápida visualización.
+
+- **Histórico de Operaciones:**  
+  Se dispone de un módulo histórico que permite consultar y filtrar operaciones pasadas, incluyendo arribos, retiros y verificaciones, con filtros por cliente y rango de fechas.
+
+- **Gestión de Pendientes de Facturación:**  
+  Sección dedicada a los ítems pendientes de facturar, con métricas y filtros por fecha y cliente, permitiendo un control financiero actualizado.
+
+- **Indicadores y Métricas:**  
+  El tablero presenta métricas clave como cantidad de arribos pendientes, cantidad de verificaciones, retiros realizados, y totales estimados de facturación.
+
+- **Interfaz Intuitiva y Acceso Seguro:**  
+  La aplicación cuenta con login de usuarios y un diseño adaptado a la identidad visual de Multistore S.A., con soporte para modo oscuro y claro.
+
+---
+
+## Etapas de Implementación
+
+### 1. Relevamiento y Análisis
+
+- Reunión con el equipo de Multistore S.A. para relevar necesidades específicas y definir los indicadores clave.
+- Análisis de la estructura de la base SQL de Depofis y definición de los datos a extraer.
+
+### 2. Desarrollo de Scripts de Extracción
+
+- Confección de scripts automatizados (por ejemplo, en Python) que se ejecutan como tareas programadas (cron jobs o tareas de Windows).
+- Estos scripts se conectan a la base SQL de Depofis y extraen la información relevante en tiempo real, generando archivos intermedios (CSV/JSON) o alimentando directamente el tablero.
+
+### 3. Desarrollo del Tablero de Control
+
+- Implementación de la aplicación web interactiva (Streamlit), integrando los datos extraídos.
+- Configuración de filtros, métricas, visualizaciones y lógica de colores según los estados definidos en Depofis.
+- Pruebas de funcionamiento y validación con usuarios clave.
+
+### 4. Integración y Automatización
+
+- Integración de los scripts de extracción con el tablero para asegurar la actualización automática y en tiempo real de la información.
+- Configuración de alertas o notificaciones si se requiere.
+
+### 5. Capacitación y Puesta en Marcha
+
+- Capacitación al personal de Multistore S.A. en el uso del tablero.
+- Documentación de uso y soporte inicial.
+
+### 6. Mantenimiento y Mejoras
+
+- Monitoreo del funcionamiento.
+- Incorporación de mejoras y nuevas funcionalidades según feedback de los usuarios.
+
+---
+
+## Beneficios Esperados
+
+- Visibilidad en tiempo real del estado operativo del depósito fiscal.
+- Mayor control y trazabilidad de las operaciones logísticas.
+- Reducción de errores y tiempos de respuesta.
+- Herramienta flexible y adaptable a nuevas necesidades.
+
+---
+
+**Consultas y comentarios serán bienvenidos para ajustar el alcance y funcionalidades del tablero a las necesidades de Multistore S.A.**
