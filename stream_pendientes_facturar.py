@@ -22,7 +22,10 @@ def show_page_pendientes_facturar():
     mask = (df['Fecha'] >= pd.to_datetime(fecha_inicio)) & (df['Fecha'] <= pd.to_datetime(fecha_fin))
     if cliente != "Todos los clientes":
         mask = mask & (df['Cliente'] == cliente)
-    filtered = df[mask]
+    filtered = df[mask].copy()
+
+    # Formatear fecha en formato español para mostrar
+    filtered['Fecha'] = filtered['Fecha'].dt.strftime('%d/%m/%Y')
 
     # Métricas
     col4, col5, col6 = st.columns(3)
